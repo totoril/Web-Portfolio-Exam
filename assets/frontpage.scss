@@ -3,8 +3,8 @@ body {
     position: absolute;
     justify-content: center;
     align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h1, h2 {
@@ -21,6 +21,7 @@ h3 {
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 25vw;
 }
 
 
@@ -29,8 +30,13 @@ p {
     flex-direction: row;
     &__original{
         flex-direction: column;
+        margin: 1vw;
+        &__img {
+            max-width: 25vw;
+        }
     }
     &__improved{
         flex-direction: column;
+        margin: 1vw;
     }
 }
