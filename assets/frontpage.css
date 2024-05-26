@@ -11,6 +11,8 @@ h1, h2 {
   font-family: sans-serif;
   position: relative;
   text-align: center;
+  color: rgb(215, 121, 44);
+  text-shadow: 1px 1px 1px rgb(26, 25, 25);
 }
 
 h3 {
@@ -22,15 +24,19 @@ h3 {
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   max-width: 25vw;
+  margin: 2vw;
 }
 
 .projects {
   display: flex;
   flex-direction: row;
+  max-height: 30vw;
 }
 .projects__original {
   flex-direction: column;
   margin: 1vw;
+  background-color: #f9f9f9;
+  box-shadow: 0 3px 5px -3px rgb(239, 238, 233), 0 9px 16px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
 }
 .projects__original__img {
   max-width: 25vw;
@@ -38,4 +44,6 @@ p {
 .projects__improved {
   flex-direction: column;
   margin: 1vw;
+  background-color: #f9f9f9;
+  box-shadow: 0 3px 5px -3px rgba(0, 0, 0, 0.2), 0 9px 16px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
 }/*# sourceMappingURL=frontpage.css.map */
