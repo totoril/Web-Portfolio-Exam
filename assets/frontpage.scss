@@ -1,50 +1,74 @@
 body {
-    background-color: aliceblue;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
 }
 
 h1, h2 {
-    font-family: sans-serif;
-    position: relative;
     text-align: center;
-    color: rgb(215, 121, 44);
-    text-shadow: 1px 1px 1px rgb(26, 25, 25);
+    margin-top: 20px;
 }
 
-h3 {
-    font-family: serif;
-    position: inherit;
+.projects__original h3, .projects__improved h3 {
     text-align: center;
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 0.5vw;
 }
 
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 25vw;
-    margin: 2vw;
+.projects__original p, .projects__improved p {
+    padding: 0 10px;
 }
-
 
 .projects {
     display: flex;
-    flex-direction: row;
-    max-height: 30vw;
-    &__original{
-        flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    
+    &__original, &__improved {
+
+        background-color: #fefefe;
+        border-radius: 5px;
+        overflow: hidden;
+        width: calc(33% - 40px); /* Adjust as necessary */
+        min-width: 300px; /* Ensures responsiveness */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
         margin: 1vw;
-        background-color: #f9f9f9;
-        box-shadow: 0 3px 5px -3px rgb(239, 238, 233), 0 9px 16px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
+        
         &__img {
-            max-width: 25vw;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        &__button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     }
-    &__improved{
-        flex-direction: column;
-        margin: 1vw;
-        background-color: #f9f9f9;
-        box-shadow: 0 3px 5px -3px rgba(0, 0, 0, 0.2), 0 9px 16px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
-    }
+
 }
+
+
+
+.projects__original:hover, .projects__improved:hover {
+    transform: scale(1.05);
+}
+
+.projects__original__button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
