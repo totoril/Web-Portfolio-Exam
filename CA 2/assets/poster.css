@@ -7,6 +7,10 @@ body {
   font-size: 20px;
 }
 
+.container {
+  position: relative;
+}
+
 #miljo {
   color: green;
 }
@@ -16,6 +20,7 @@ body {
   position: absolute;
   margin-left: 5%;
   margin-right: 50%;
+  font-size: 2vw;
 }
 .heading__first {
   margin-top: 10%;
@@ -25,11 +30,16 @@ body {
   font-family: Caveat;
 }
 
+textPath {
+  position: absolute;
+}
+
 .single__paragraph {
   position: absolute;
+  font-size: 1.5vw;
   margin-left: 5%;
   margin-right: 45%;
-  margin-top: 40%;
+  margin-top: 32%;
   color: white;
 }
 
