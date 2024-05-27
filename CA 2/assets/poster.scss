@@ -42,14 +42,160 @@ textPath{
     color: white;
 }
 
-    /*The small earth patch*/
-    .container__earth{
+
+
+.container {
+    position: relative;
+
+    &__pollution {
         position: absolute;
-        width: 100px;
-        height: 100px;
+        top: 47vw;
+        left: 15vw;
+        width: 74vw;
+    }
+
+    &__kids {
+        position: absolute;
+        top: 57vw;
+        left: 15vw;
+        width: 72vw;
+    }
+
+    &__earth {
+        position: absolute;
+        width: 100%;
+        top: 81vw;
+        &__h3 {
+            position: absolute;
+            top: 100vw;
+            left: 40vw;
+            font-size: 3vw;
+        }
+        &__p {
+            position: absolute;
+            &__left {
+                position: absolute;
+                top: 95vw;
+                left: 15vw;
+                max-width: 10vw;
+                font-size: 1.7vw;
+            }
+            &__top {
+                position: absolute;
+                top: 85vw;
+                left: 45vw;
+                max-width: 15vw;
+                font-size: 1.7vw;
+            }
+            &__right {
+                position: absolute;
+                top: 90vw;
+                left: 86vw;
+                max-width: 7vw;
+                font-size: 1.7vw;
+                &__bottom {
+                    position: absolute;
+                    top: 118vw;
+                    left: 85vw;
+                    max-width: 10vw;
+                    font-size: 1.7vw;
+                }
+            }
+        }
+    }    
+    /*The small earth patch*/
+    &__earth-patch{
+        position: absolute;
+        width: 10vw;
+        height: 10vw;
         border-radius: 100% 45% 62% 58% / 67% 98% 76% 36% ;
         background-color: #A1CF6D;
         border: 2px solid black;
-        top: 78%;
-        left: 45%;
+        top: 110vw;
+        left: 45vw;
+
+        &__mail{
+            position: absolute;
+            max-width: 10vw;
+            font-size: 2vw;
+        }
     }
+
+}
+
+#car {
+    position: absolute;
+    top: 10vw;
+}
+
+@keyframes moveMoon {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(100px);}
+    100% {transform: translateY(0);}
+    }
+    .moon {
+    animation: moveMoon 5s infinite ease-in-out;
+    }
+    path {
+    animation: moveAlongPath 4s infinite alternate;
+    }
+
+
+// Bacground colors
+    .lightred {
+        opacity:0.38;
+        fill:#C77161;
+    }
+
+    .lightblue {
+        opacity:0.15;
+        fill:#00B1DC;
+    }
+
+    .blue {
+        fill:#005BA7;
+    }
+
+    .white {
+        fill:#FFFFFF;
+    }
+
+// Car styling
+    .car__color {
+        fill:#C77161;
+    }
+
+    .car__lines {
+        stroke:#000000;
+        stroke-width:4.206;
+        stroke-miterlimit:10;
+    }
+
+// Stars
+    .stars__color {
+        fill:#F5EC43;
+        stroke:#000000;
+        stroke-width:4.6017;
+        stroke-miterlimit:10;
+    }
+
+// Moon styling
+    .moon {
+        fill:#EAEAE9;
+        stroke:#000000;
+        stroke-width:4.206;
+        stroke-miterlimit:10;
+    }
+    .moon__eyes {
+        fill: #000000;
+        stroke-width:4.6017;
+        stroke-miterlimit:10;
+    }
+
+    .moon__circles {
+        fill:#B4B6B7;
+        stroke:#000000;
+        stroke-width:4.6017;
+        stroke-miterlimit:10;
+    }
+
