@@ -1,0 +1,46 @@
+@font-face{
+    font-family: Caveat;
+    src: url(font/Caveat-Regualar.ttf);
+}
+
+body {
+    font-family: Caveat;
+    font-size: 20px;
+}
+
+#miljo {
+    color: green;
+}
+.heading {
+    font-family: sans-serif;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 50%;
+    &__first{
+    margin-top: 10%;
+    color: #005BA7;
+    }
+    &__second {
+        font-family: Caveat;
+    }
+}
+
+.single__paragraph{
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 45%;
+    margin-top: 40%;
+    color: white;
+}
+
+    /*The small earth patch*/
+    .container__earth{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 100% 45% 62% 58% / 67% 98% 76% 36% ;
+        background-color: #A1CF6D;
+        border: 2px solid black;
+        top: 78%;
+        left: 45%;
+    }
