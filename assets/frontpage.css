@@ -3,12 +3,14 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #ececec;
+  background: linear-gradient(#ffebeb, #939ae3);
 }
 
 h1, h2, h3 {
   text-align: center;
   margin-top: 20px;
+  color: rgb(31, 20, 10);
+  text-shadow: 2px 2px 2px rgb(169, 164, 176);
 }
 
 .projects__original h3, .projects__improved h3 {
