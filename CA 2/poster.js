@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const rotateAnimationBig = document.getElementById('rotateAnimationBig');
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        // Reduced motion preference detected
         rotateAnimationBig.setAttribute('to', '45 1456.2 270.15');
         rotateAnimationBig.setAttribute('dur', '10s'); // slower rotation for reduced motion
     }
