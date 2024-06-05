@@ -2,6 +2,14 @@
   font-family: Caveat;
   src: url(font/Caveat-Regualar.ttf);
 }
+@media (prefers-reduced-motion: reduce) {
+  .moon {
+    animation: moveMoon 30s infinite ease-in-out;
+  }
+  path {
+    animation: moveAlongPath 40s infinite alternate;
+  }
+}
 body {
   font-family: Caveat;
   font-size: 20px;
