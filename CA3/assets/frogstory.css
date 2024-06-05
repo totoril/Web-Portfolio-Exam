@@ -1,11 +1,3 @@
-/*DONE!!
-
-Move frog or car in the scene so the car does not drive on the frog
-Fade out on headings when scrolling past them
-Fade out elemments so they dont "float in the air" gsap???
-Set placement for the headings
-Streamline headings - h1, h2, h3??
-*/
 @media (prefers-reduced-motion: reduce) {
   .textsection__header1 {
     animation: none !important;
