@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Web-Portfolio-Exam/CA3/assets/frogstory.css">
-    <script defer src="/Web-Portfolio-Exam/CA3/frogstory.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Web-Portfolio-Exam/CA3/assets/frogstory.css">
+  <script defer src="/Web-Portfolio-Exam/CA3/frogstory.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <title>Improved Frog Story</title>
 </head>
-<body>
+<body id="box">
      <!-- SANNA -->
-  <section class="introduction">
+  <section fade-out="true" class="introduction textsection__header1">
     <h1>Did you know...</h1>
   </section>
   
   <div class="spacer"></div>
 
-  <section class="important">
-    <h2 to-be-animated="true" class="text-fade animation-pause">...that a healthy frog population is a good indication of a healthy environment</h2>
+  <section fade-out="true" class="important">
+    <h2 to-be-animated="true" class="animation-pause infotext">...that a <em class="emphasized-text">healthy frog population</em> is a good indication of a <em class="emphasized-text">healthy environment</em></h2>
     <img to-be-animated="true" class="important__frog--1 animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg" alt="frog">
     <img to-be-animated="true" class="important__frog--2 animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg" alt="frog">
     <img to-be-animated="true" class="important__frog--3 animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg" alt="frog">
@@ -26,8 +28,8 @@
 
   <div class="spacer"></div>
 
-  <section class="ecosystem">
-    <h2 to-be-animated="true" class="animation-pause">They control mosquitos and algae, and they are food for birds and fishes</h2>
+  <section fade-out="true" class="ecosystem">
+    <h2 to-be-animated="true" class="animation-pause infotext">They <em class="emphasized-text">control</em> mosquitos and algae, and they <em class="emphasized-text">are food</em> for birds and fishes</h2>
     <img to-be-animated="true" class="ecosystem__frog--apear animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg" alt="frog">
     <img to-be-animated="true" class="ecosystem__pond-leaf animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/lilje.svg" alt="lily">
     <img to-be-animated="true" class="ecosystem__pond animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/pond.svg" alt="pond">
@@ -46,12 +48,12 @@
 
    <!-- KAJA -->
 
-   <section class="challenges">
-    <h2 to-be-animated="true" class="challenges__heading animation-pause">But they're facing many challenges...</h2>
+   <section fade-out="true" class="challenges textsection__header2">
+    <h2 to-be-animated="true" class="challenges__heading animation-pause">But they're facing many <em class="emphasized-text">challenges</em>...</h2>
   </section>
 
-  <section class="habitat-loss">
-    <h2 to-be-animated="true" class="habitat-loss__heading1 animation-pause">... like <em
+  <section fade-out="true" class="habitat-loss">
+    <h2 to-be-animated="true" class="habitat-loss__heading1 animation-pause infotext">... like <em
         class="emphasized-text">loss</em> of <em class="emphasized-text">habitats</em></h2>
     <svg to-be-animated="true" class="habitat-loss__frog1 animation-pause" id="Layer_2-s2f1" data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.42 90.36">
@@ -124,8 +126,8 @@
   
   <div class="spacer"></div>
 
-  <section class="pollution">
-    <h2 to-be-animated="true" class="pollution__heading2 animation-pause">... and their skin <em
+  <section fade-out="true" class="pollution">
+    <h2 to-be-animated="true" class="pollution__heading2 animation-pause infotext">... and their skin <em
           class="emphasized-text">absorb</em>
         everything in their <em class="emphasized-text">environment</em></h2>
       <svg to-be-animated="true" class="pollution__frog2 animation-pause" id="Layer_2--s2f2" data-name="Layer 2"
@@ -192,8 +194,8 @@
   <!--Horizontal scroll between these frames??-->
   <div class="spacer"></div>
   
-  <section class="disease">
-    <h2 to-be-animated="true" class="disease__heading3 animation-pause">... and diseases like <em
+  <section fade-out="true" class="disease textsection__heading2">
+    <h2 to-be-animated="true" class="disease__heading3 animation-pause infotext">... and diseases like <em
       class="emphasized-text">chytrid fungi</em> is transmittid <em class="emphasized-text">more frequently</em>
   </h2>
   <svg to-be-animated="true" class="disease__frog3 animation-pause" id="Layer_2--s2f3" data-name="Layer 2"
@@ -262,11 +264,11 @@
   
   <div class="spacer"></div>
   
-  <section class="apocalypse">
+  <section fade-out="true" class="apocalypse">
     <div to-be-animated="true" class="apocalypse__background-change animation-pause"></div>
-    <h2 to-be-animated="true" class="apocalypse__heading4 animation-pause"> Experts are now <em
+    <h2 to-be-animated="true" class="apocalypse__heading4 animation-pause infotext"> Experts are now <em
       class="emphasized-text">worried</em> about an</h2>
-  <h2 to-be-animated="true" class="apocalypse__heading4-2 animation-pause"><em class="emphasized-text">AMPHIBIAN APOCALYPSE</em></h2>
+  <h3 to-be-animated="true" class="apocalypse__heading4-2 animation-pause"><em class="emphasized-text">AMPHIBIAN APOCALYPSE</em></h3>
   <img to-be-animated="true" class="apocalypse__dead-frog1 animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/frog-dead.svg" alt="Dead frog">
   <img to-be-animated="true" class="apocalypse__dead-frog2 animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/frog-dead.svg" alt="Dead frog">
   <img to-be-animated="true" class="apocalypse__dead-frog3 animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/frog-dead.svg" alt="Dead frog">
@@ -277,25 +279,25 @@
   
   <div class="spacer"></div>
 
-  <section class="what-can-you-do">
+  <section fade-out="true" class="what-can-you-do textsection__header2">
 <h2 to-be-animated="true" class="what-can-you-do__heading animation-pause">So what can <em class="emphasized-text">YOU</em> do?</h2>
   </section>
 
   <div class="spacer"></div>
 
     <!-- TORIL -->
-    <section class="touch-frog">
-        <h2 to-be-animated="true" class="touch-frog__heading1 animation-pause">Do <em class="emphasized-text">not move</em> or touch <em class="emphasized-text">frogs</em>, they are sensitive</h2>
-        <h2 to-be-animated="true" class="touch-frog__heading2 animation-pause">(Try moving the pointer to the frog)</h2>
+    <section fade-out="true" class="touch-frog">
+        <h2 to-be-animated="true" class="touch-frog__heading1 animation-pause infotext">Do <em class="emphasized-text">NOT</em> move or touch <em class="emphasized-text">frogs</em>, they are sensitive</h2>
+        <h3 to-be-animated="true" class="touch-frog__heading2 animation-pause infotext--2">(Try moving the pointer to the frog)</h3>
         <img to-be-animated="true" class="touch-frog__frog" src="/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg">
         <div to-be-animated="true" class="touch-frog__warning-box">Don't touch or move frogs!</div>
     </section>
   
     <div class="spacer"></div>
   
-    <section class="frog-habitat">
-        <h2 to-be-animated="true" class="frog-habitat__heading1 animation-pause">Make a <em class="emphasized-text">good habitat</em> for the frogs to live in</h2>
-        <h2 to-be-animated="true" class="frog-habitat__heading2 animation-pause">It is also <em class="emphasized-text">good</em> for the <em class="emphasized-text">environment</em></h2>
+    <section fade-out="true" class="frog-habitat">
+        <h2 to-be-animated="true" class="frog-habitat__heading1 animation-pause infotext">Make a <em class="emphasized-text">good habitat</em> for the frogs to live in</h2>
+        <h3 to-be-animated="true" class="frog-habitat__heading2 animation-pause infotext--2">It is also <em class="emphasized-text">good</em> for the <em class="emphasized-text">environment</em></h3>
         <button to-be-animated="true" class="frog-habitat__action-button" onclick="addImagesToGrass()">Click to add a rock, tree,
           leavs and the pond</button>
         <div class="frog-habitat__box"></div>
@@ -303,9 +305,9 @@
   
     <div class="spacer"></div>
   
-    <section class="cat-walk">
-        <h2  to-be-animated="true"class="cat-walk__heading1 animation-pause">Do not let your cat be outside at night</h2>
-        <h2  to-be-animated="true"class="cat-walk__heading2 animation-pause2">They are known to kill not only frogs, but also other small animals that are essential to our ecosystem</h2>
+    <section fade-out="true" class="cat-walk">
+        <h2  to-be-animated="true"class="cat-walk__heading1 animation-pause infotext">Do <em class="emphasized-text">NOT</em> let your cat be outside at night</h2>
+        <h3  to-be-animated="true"class="cat-walk__heading2 animation-pause2 infotext--2">They are known to <em class="emphasized-text">kill</em> not only frogs, but also other small animals that are <em class="emphasized-text">essential to our ecosystem</em></h3>
         <div to-be-animated="true" class="cat-walk__night animation-pause"></div>
         <img to-be-animated="true" class="cat-walk__moon animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/moon.svg">
         <img to-be-animated="true" class="cat-walk__cat--walk animation-pause" animate--on-visibility data-animationclass="animate__fadeInRight" src="/Web-Portfolio-Exam/CA3/assets/SVGs/cat.svg">
@@ -314,11 +316,11 @@
     <div class="spacer"></div>
   
     <section class="unsg">
-        <h2 to-be-animated="true" class="unsg__heading1 animation-pause">By <em class="emphasized-text">helping</em> the frogs with keeping their habitat clean, you will be <em class="emphasized-text">contributing</em> on the <em class="emphasized-text">UN's 15 Sustainability goal!</em></h2>
+        <h2 to-be-animated="true" class="unsg__heading1 animation-pause infotext">By <em class="emphasized-text">helping</em> the frogs with keeping their habitat clean, you will be <em class="emphasized-text">contributing</em> on the <em class="emphasized-text">UN's 15 Sustainability goal!</em></h2>
         <img to-be-animated="true" class="unsg__frog animation-pause" src="/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg">
         <a href="https://sdgs.un.org/topics/biodiversity-and-ecosystems">
           <img to-be-animated="true" class="unsg__15 animation-pause" src="/Web-Portfolio-Exam/CA3/assets/Languages_15.png">      
-          <h2 to-be-animated="true" class="unsg__text animation-pause"><em class="emphasized-text">Click on me </em>to read more about Goal 15, and the other 16 goals</h2>
+          <h3 to-be-animated="true" class="unsg__text animation-pause" class="infotext--2"><em class="emphasized-text">Click on me </em>to read more about Goal 15, and the other 16 goals</h3>
         </a>
     </section>
     
