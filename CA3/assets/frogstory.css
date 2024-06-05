@@ -51,7 +51,7 @@ p {
 }
 
 .infotext {
-  scroll-snap-align: start; /* snap to the start (top) of the viewport */
+  scroll-snap-align: start;
   position: relative;
   text-align: center;
   padding: 2%;
@@ -1232,12 +1232,10 @@ p {
 .touch-frog__heading1 {
   z-index: 2;
   animation: heading1 2s;
-  animation-fill-mode: forwards;
 }
 .touch-frog__heading2 {
   opacity: 0;
   animation: heading1 2s 2s;
-  animation-fill-mode: forwards;
 }
 .touch-frog__frog {
   width: 10vw;
@@ -1292,12 +1290,10 @@ p {
 }
 .frog-habitat__heading1 {
   animation: heading1 2s;
-  animation-fill-mode: forwards;
 }
 .frog-habitat__heading2 {
   opacity: 0;
   animation: heading1 2s 2s;
-  animation-fill-mode: forwards;
 }
 .frog-habitat__action-button {
   display: none;
@@ -1314,6 +1310,30 @@ p {
   display: block;
 }
 
+@keyframes slideInFromRightFrog1 {
+  from {
+    right: -10vw; /* Starting position outside the viewport */
+  }
+  to {
+    right: 30vw; /* Final position */
+  }
+}
+@keyframes slideInFromLeftFrog2 {
+  from {
+    left: -40vw; /* Starting position outside the viewport */
+  }
+  to {
+    left: 15vw; /* Final position */
+  }
+}
+@keyframes slideInFromLeftFrog3 {
+  from {
+    left: -40vw; /* Starting position outside the viewport */
+  }
+  to {
+    left: 33vw; /* Final position */
+  }
+}
 .cat-walk {
   display: block;
   position: relative;
@@ -1357,6 +1377,13 @@ p {
   bottom: -10vw;
   animation: move-cat 5s forwards, fade-out 2s 4s forwards;
 }
+.cat-walk__frog--walk {
+  width: 10vw;
+  right: -10vw;
+  top: 20vw;
+  position: absolute;
+  animation: slideInFromRight 7s 5s forwards, bounce2 3s 0.5s infinite;
+}
 
 @keyframes move-cat {
   0% {
@@ -1374,6 +1401,14 @@ p {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes slideInFromRight {
+  from {
+    right: -10vw; /* Starting position outside the viewport */
+  }
+  to {
+    right: 45vw; /* Final position */
   }
 }
 @keyframes night-sky {
