@@ -4,12 +4,18 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .moon {
-    animation: moveMoon 30s infinite ease-in-out;
+    animation: moveMoon 20s infinite ease-in-out !important;
   }
   path {
-    animation: moveAlongPath 40s infinite alternate;
+    animation: moveAlongPath 20s infinite alternate !important;
   }
   #rotateAnimationBig {
+    animation: none !important;
+  }
+  #rotateAnimation {
+    animation: none !important;
+  }
+  #moonline {
     animation: none !important;
   }
 }
