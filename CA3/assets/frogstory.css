@@ -1,3 +1,11 @@
+/*DONE!!
+
+Move frog or car in the scene so the car does not drive on the frog
+Fade out on headings when scrolling past them
+Fade out elemments so they dont "float in the air" gsap???
+Set placement for the headings
+Streamline headings - h1, h2, h3??
+*/
 * {
   margin: 0;
   box-sizing: border-box;
@@ -12,20 +20,8 @@ body {
   background-size: cover;
 }
 
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 html {
   scroll-snap-type: block; /* applied to main document scroller */
-}
-
-h1, h2 {
-  scroll-snap-align: start; /* snap to the start (top) of the viewport */
 }
 
 h1,
@@ -39,6 +35,7 @@ p {
   position: relative;
   height: 100vh;
   padding: 20% 20%;
+  scroll-snap-align: center;
 }
 .textsection__header1 {
   text-align: center;
@@ -50,14 +47,20 @@ p {
   text-align: center;
   font-size: 3vw;
   animation: break-message 1s forwards;
-  padding: 20% 20%;
+  padding: 15% 10%;
 }
 
 .infotext {
+  scroll-snap-align: start; /* snap to the start (top) of the viewport */
   position: relative;
   text-align: center;
   padding: 2%;
   font-size: 2.5vw;
+}
+.infotext--2 {
+  position: relative;
+  font-size: 1.5vw;
+  text-align: center;
 }
 
 .emphasized-text {
@@ -795,7 +798,7 @@ p {
 
 .disease {
   position: relative;
-  height: 110vh;
+  height: 100vh;
 }
 .disease__heading3 {
   opacity: 0;
@@ -1214,12 +1217,6 @@ p {
     opacity: 0;
     transform: translateY(1000%);
   }
-}
-
-.what-can-you-do {
-  height: 100vh;
-  position: relative;
-  padding: 25% 30%;
 }
 
 .to-do {

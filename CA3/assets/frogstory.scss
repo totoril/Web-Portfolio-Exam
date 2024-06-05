@@ -1,12 +1,8 @@
-//Streamline headings - h1, h2, h3??
-//Set placement for the headings
+
 //Reuse codes that are reusable
 
-//Fade out on headings when scrolling past them
-//Fade out elemments so they dont "float in the air" gsap???
-
 //Horizontal scroll on car pollution scene and fungi
-//Move frog or car in the scene so the car does not drive on the frog
+
 //fix how the car is placed out of view making the viewport too wide
 
 //General consistancy in the story
@@ -19,6 +15,14 @@
 
 //Accessability - Make reduced motion stuff, check contrast, make usable without the use of mouse/trackpad scroll - check how to do tab shortcut
 
+/*DONE!!
+
+Move frog or car in the scene so the car does not drive on the frog
+Fade out on headings when scrolling past them
+Fade out elemments so they dont "float in the air" gsap???
+Set placement for the headings
+Streamline headings - h1, h2, h3??
+*/
 
 * {
     margin: 0;
@@ -34,26 +38,12 @@ body {
     background-size: cover;
 }
 
-
-@keyframes fade {
-    0% {
-        opacity: 1; // Start fully visible
-    }
-    100% {
-        opacity: 0; // End fully transparent
-    }
-}
-
 //GENERAL STYLING
 
 html {
     scroll-snap-type: block;   /* applied to main document scroller */
   }
-h1, h2 {
-    scroll-snap-align: start;  /* snap to the start (top) of the viewport */
-  }
   
-
 h1,
 h2,
 p {
@@ -64,6 +54,7 @@ p {
     position: relative;
     height: 100vh;
     padding: 20% 20%;
+    scroll-snap-align: center;
     &__header1 {
         text-align: center;
         font-size: 5vw;
@@ -74,15 +65,22 @@ p {
         text-align: center;
         font-size: 3vw;
         animation: break-message 1s forwards;
-        padding: 20% 20%;
+        padding: 15% 10%;
     }
 }
 
 .infotext {
+    scroll-snap-align: start;  /* snap to the start (top) of the viewport */
     position: relative;
     text-align: center;
     padding: 2%;
     font-size: 2.5vw;
+    
+    &--2{
+        position: relative;
+        font-size: 1.5vw;
+        text-align: center;
+    }
 }
 
 .emphasized-text {
@@ -952,7 +950,7 @@ p {
 
 .disease {
     position: relative;
-    height: 110vh;
+    height: 100vh;
 
     &__heading3 {
         opacity: 0;
@@ -1463,12 +1461,6 @@ p {
             transform: translateY(1000%);
         }
     }
-}
-
-.what-can-you-do {
-    height: 100vh;
-    position: relative;
-    padding:25% 30%;
 }
 
 //TORIL

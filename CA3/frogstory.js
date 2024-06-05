@@ -34,13 +34,41 @@ const options = {
 
 document.querySelectorAll(".introduction, .important, .ecosystem, .challenges, .habitat-loss, .pollution, .disease, .apocalypse, .what-can-you-do, .touch-frog, .frog-habitat, .cat-walk, .unsg").forEach(sectionEl=>observer.observe(sectionEl));
 
+document.addEventListener("DOMContentLoaded", function() {
+  // Initialize GSAP animations
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Select all elements with the data-animate attribute
+  const animateElements = document.querySelectorAll('[fade-out="true"]');
+
+  // Loop through each element and create a ScrollTrigger for it
+  animateElements.forEach((elem) => {
+      gsap.fromTo(elem, 
+          {
+              autoAlpha: 1 // Start with full opacity
+          },
+          {
+              autoAlpha: 0, // End with zero opacity
+              scrollTrigger: {
+                  trigger: elem,
+                  start: "top top", // When top of the element enters the bottom of the viewport
+                  end: "bottom 50%", // When top of the element is halfway out of the viewport
+                  scrub: true, // Smooth scrubbing
+              }
+          }
+      );
+  });
+});
+
+
+
 
 //TORIL
 
 //Action button
 window.addEventListener("scroll", function() {
   const scrollButton = document.querySelector(".frog-habitat__action-button");
-  if (window.scrollY > 10400 && window.scrollY < 10800) {
+  if (window.scrollY > 10350 && window.scrollY < 10900) {
     scrollButton.classList.add("show");
   } else {
     scrollButton.classList.remove("show");
