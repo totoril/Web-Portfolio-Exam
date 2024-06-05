@@ -9,6 +9,7 @@
 <body>
     <h1>My Web Portfolio for the Advanced CSS course</h1>
     <h2>Compulsory Assignments</h2>
+    <h3>Click on the cards to see the original projects</h3>
 
     <div class="projects">
         <div class="projects__original">
@@ -16,7 +17,18 @@
                 <img class="projects__original__img" src="img/oblig1/page-screenshot1.png" alt="Screenshot of the recreated Finn.no front page.">
                 <h3>BEM and Design systems</h3>
             </a>
-            <p>Present the original individual assignment and include reflections on learning outcomes, advantages and disadvantages of BEM and design systems, and how these concepts were applied in the assignment.</p>
+            <p>
+                Thoughout this assignment I learned alot about BEM and design systems. In the start it was a little difficult to see where to start with identifying the block, element and modifiers,
+                and as the assignment progressed I started realizing how we could have classified the different parts in a more efficient way. </p>
+            <p>
+                From what I have learned, BEM is a great way to make streamlined styles, keeps the code tidy while working on it, and is very helpful in bigger collaborative projects.
+                This assignment was very helpful in understanding the usage of BEM and design systems, but I realized that since we were recreating sites from a screenshot,
+                this assignment was probably a bit small for showcasing a "real life" usecase for BEM. </p>
+                
+            <p> While implementing BEM one has to collaborate in a good way, making sure that everyone is on the same page and understands how you as a team is going to utilize it. 
+                So I can see some challenges when it comes to introducing newer people to this way of styling, aswell as how it can be timeconsuming setting it up, and mapping out the different parts of the design. 
+                But it is very usefull in the longrun when there is a bigger project with a longterm goal that can afford the more expensive mapping.
+            </p>
         </div>
 
         <div class="projects__original">
@@ -24,10 +36,20 @@
                 <img class="projects__original__img" src="img/oblig2/poster.png" alt="Screenshot of the recreated poster website.">
                 <h3>SVGs, SVG Drawing and Animations, and CSS Drawing and Animations</h3>
             </a>
-            <p>This group assignment is on spreading awareness about <em>digital sustainability</em> through making digital posters, with animated elements to create an <em>engaging web experience</em> for children</p>
-            <p>In this assignment Vilja Alexandra Henriksen and I worked together in a group.</p> 
-            <p>(Click on the thumbnail to see our delivered assignment)</p>
-            <button class="projects__original__button to improved">Improved version</button> <!--maybee???-->
+            <p>This group assignment is on spreading awareness about <em>digital sustainability</em> through making digital posters, with animated elements to create an <em>engaging web experience</em> for children.</p>
+            <p>
+                In this assignment Vilja Alexandra Henriksen and I worked together in a group. We devided the work in half, so Vilja was mainly working on the upper half of the
+                poster, and I was mainly working on the latter half. But we collaborated and helped eachother out when we were stuck on some code.
+            </p>
+            <p>
+                When starting out with the site of the poster, we did not think about simplifying and removing unnecessary elements of the vector graphics, and decided to implement the 
+                whole poster as a SVG. This made it so we had to identify the different elements manually, so we could target and animate these. This also ended up making it a bit 
+                unclear how we best could make the site responsive.
+            </p>
+            <p>
+                In hindsight, we should have implemented the elements differently, making the code more structured and organized. We also did not add the reduced motion feature, making 
+                the site less accessible.
+            </p>
         </div>
 
         <div class="projects__original">
@@ -35,14 +57,25 @@
                 <img class="projects__original__img" src="img/oblig3/scrollytelling story.png" alt="Screenshot of the first part of the frog story.">
                 <h3>Scroll- and Storytelling, Design Principles, Accessibility and User Experience</h3>
             </a>
-            <p>Present the original group assignment.</p>
-            <p>In this assignment Kaja Emilie Berg, Sanna Sjøholt and I worked together in a group.</p>
-            <p>(Click on the thumbnail to see our delivered assignment)</p>
-            <button class="projects__original__button to improved">Improved version</button> <!--maybee???-->
+            <p>This group assignment is on creating a <em>scrollable web project</em> that, with the use of animated elements tells a <em>compelling message</em>, centered around the <em>United Nations Sustainable Development Goals</em>.</p>
+            <p>
+                In this assignment Kaja Emilie Berg, Sanna Sjøholt and I worked together in a group. We devided the story in three parts, where each part had four scenes.
+                Sanna was mainly on the first part, Kaja on the second, and I was on the third part.
+            </p>
+            <p>
+                We collaborated on the structure of the site. We had to restructure the html to make the object observer in JavaScript work properly, and ended up doing this lastly
+                when we realized this problem.
+            </p>
+            <p>
+                While we focused on finishing up the scrolling for the story, we didn't really focus on the accessibility of the site, but we did reduce some of the data size by
+                using SVGs and reusing code that was reusable.
+            </p>
+            <p>
+                With this in mind, we should have made the site more sustainable and accessible.  
+            </p>
         </div>
     </div>
 
-    <p>Link to Previous Live Version: Provide a link to the original assignment version.</p>
     <p>General Reflection and Learning outcomes: Highlight your learning outcomes and what you would do differently if you could start over. Explain what you learned from implementing the assignment and reflect on the main advantages, disadvantages, and application of the methods, skills, and concepts used in the project.</p>
 
     <h2>Improved Compulsory Assignments</h2>
@@ -52,19 +85,23 @@
                 <h3>SVGs, SVG Drawing and Animations, and CSS Drawing and Animations</h3>
                 <ul>
                     <li>1. Improved Version: Include the improved individual version. Both link to live page and access to code.</li>
-                    <li>2. Explanation 
-                        <p>• Main Contributions: Describe your main contributions to the group assignment.</p> 
-                        <p>• explain why these changes were made.</p>
+                        <p>
+                            For the group assignment my main contribution was mainly on the earth. I animated the eyes, as well as drew the earth-patch in the middle and placed the text
+                        </p>
+                        <p>
+                            I also mapped out where the different elements were in the html code to make it easier to understand what we were working on.
+                        </p> 
                         <p>
                             Main changes in the improved version is that I removed unnessesary elements, and grouped the elements with 
                             significant names, as well as simplified the elements in illustrator to make the elements less expensive
                         </p>
                         <p>
                             Some of the elements I transfered as SVGs into a folder named SVG in assets for more readable code. 
-                            The elements i transfered were static eleents.
+                            The elements I transfered were static elements.
                         </p>
                         <p>
-                            I focused on improving the responsiveness on the page, and readability of the code.
+                            I focused on improving the responsiveness on the page, as well as readability of the code and making the SVG's more simplified.
+                            I have also added reduced motion to make some elements more user friendly and accessible, since the poster mainly uses animations.
                         </p>
                     </li>
                     <li>3. Reflection Notes: In addition to the common reflections, write the following: 
@@ -79,9 +116,26 @@
                 <h3>Scroll- and Storytelling, Design Principles, Accessability and User Experience</h3>
                 <ul>
                     <li>1. Improved Version: Include the improved individual version. Both link to live page and access to code.</li>
-                    <li>2. Explanation 
-                        <p>• Main Contributions: Describe your main contributions to the group assignment.</p> 
-                        <p>• Main Changes: Detail the main changes made in the improved version and explain why these changes were made.</p>
+                        <p>
+                            My main contributions on this project is pitching the main idea on the focus of frogs, and how they indicate a healthy environment,
+                            some SVGs, like the frog, leafs, and logs. I was also responsible for coding, styling and scripting in the last third of the story.
+                        </p>
+                        <p>
+                            The main changes I've done in the improved version is that I made the text more structured and cohesive throughout the story, 
+                            keeping the same style of text in the same header style. For the headings I made classes grouping all the headers into their
+                            designated style. 
+                        </p>
+                        <p>
+                            I improved the transitions between the parts of the story by making the elements fade when scrolling past the sections.
+                        </p>
+                        <p>
+                            I focused the most on improving the experience of scrolling through the story and making it more clear in its message by doing so.
+                            To further substantiate the message of the story I changed out some elements with some that i feel are better suited, and animated some
+                            additional frogs to my frames for the concistency of the story. 
+                        </p>
+                        <p>
+                            I ended up adding reduced motion to make the site more user friendly and accessible, sonce most of the story is told with animations.
+                        </p>
                     </li>
                     <li>3. Reflection Notes: In addition to the common reflections, write the following: 
                         <p>• Accessibility: Reflect on accessibility considerations in your projects.</p> 
