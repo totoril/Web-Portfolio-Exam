@@ -95,13 +95,13 @@ function addImagesToGrass() {
   let image6 = document.createElement("img");
   let image7 = document.createElement("img");
 
-  image1.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/leafs.svg";
-  image2.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/pond.svg";
-  image3.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/logs1.svg";
-  image4.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/leafs.svg";
-  image5.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/leafs.svg";
-  image6.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/logs3.svg";
-  image7.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/logs2.svg";
+  image1.src = "/CA3/assets/SVGs/leafs.svg";
+  image2.src = "/CA3/assets/SVGs/pond.svg";
+  image3.src = "/CA3/assets/SVGs/logs1.svg";
+  image4.src = "/CA3/assets/SVGs/leafs.svg";
+  image5.src = "/CA3/assets/SVGs/leafs.svg";
+  image6.src = "/CA3/assets/SVGs/logs3.svg";
+  image7.src = "/CA3/assets/SVGs/logs2.svg";
 
   image1.height = 100;
   image2.height = 200;
@@ -172,9 +172,9 @@ function addSlidingFrogs() {
   const frog2 = document.createElement("img");
   const frog3 = document.createElement("img");
 
-  frog1.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg";
-  frog2.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg";
-  frog3.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg";
+  frog1.src = "/CA3/assets/SVGs/frog.svg";
+  frog2.src = "/CA3/assets/SVGs/frog.svg";
+  frog3.src = "/CA3/assets/SVGs/frog.svg";
 
   frog1.height = 75;
   frog2.height = 90;
