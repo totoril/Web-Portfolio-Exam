@@ -1,28 +1,18 @@
-
-//Reuse codes that are reusable
-
-//Horizontal scroll on car pollution scene and fungi
-
-//fix how the car is placed out of view making the viewport too wide
-
-//General consistancy in the story
-
-//Fix glitchy frog in touching frog scene
-
-//Place trash and pollution + replace trees with logs and rocks + make frogs appear when items are in view
-
-//make frogs jump into view when cat is gone
-
-//Accessability - Make reduced motion stuff, check contrast, make usable without the use of mouse/trackpad scroll - check how to do tab shortcut
-
-/*DONE!!
-
-Move frog or car in the scene so the car does not drive on the frog
-Fade out on headings when scrolling past them
-Fade out elemments so they dont "float in the air" gsap???
-Set placement for the headings
-Streamline headings - h1, h2, h3??
-*/
+@media (prefers-reduced-motion: reduce) {
+    .textsection{
+        &__header1{
+            animation: none !important;
+        }
+        &__header2 {
+            animation: none !important;
+        }
+    }
+    .unsg {
+        &__frog {
+            animation: none !important;
+        }
+    }
+}
 
 * {
     margin: 0;
@@ -54,7 +44,7 @@ p {
     position: relative;
     height: 100vh;
     padding: 20% 20%;
-    scroll-snap-align: center;
+    scroll-snap-align: center; //Added to make the headers snap into the same place within the viewport (center) when scrolling
     &__header1 {
         text-align: center;
         font-size: 5vw;
@@ -70,13 +60,13 @@ p {
 }
 
 .infotext {
-    scroll-snap-align: start;  /* snap to the start (top) of the viewport */
+    scroll-snap-align: start;  //Text that is not a header snap onto the start/top of the viewport 
     position: relative;
     text-align: center;
     padding: 2%;
     font-size: 2.5vw;
     
-    &--2{
+    &--2{ //Text that is smaller than the first infotext
         position: relative;
         font-size: 1.5vw;
         text-align: center;
@@ -788,7 +778,7 @@ p {
         position: absolute;
         right: 21vw;
         top: 30vw;
-        z-index: 2;
+        z-index: 2; //Moved the frog infront of the car to make it clear that the gass is affecting the frog, and its not getting hit by the car
         opacity: 0;
         opacity: 0;
         animation:
@@ -832,8 +822,8 @@ p {
         opacity: 0;
         width: 60vw;
         position: absolute;
-        top: 15vw;
-        z-index: 1;
+        top: 15vw; //Moved the car a bit up to further make it clear its driving past the frog
+        z-index: 1; //Put it's z-index behind the frog
         opacity: 0;
         animation: car 3.5s 6s;
         animation-fill-mode: forwards;
@@ -950,7 +940,7 @@ p {
 
 .disease {
     position: relative;
-    height: 100vh;
+    height: 100vh; //Made the height compattible with the scroll-snap-allign for the text
 
     &__heading3 {
         opacity: 0;
@@ -1478,13 +1468,11 @@ p {
     &__heading1 {
         z-index: 2;
         animation: heading1 2s;
-        animation-fill-mode: forwards;
     }
 
     &__heading2 {
         opacity: 0;
         animation: heading1 2s 2s;
-        animation-fill-mode: forwards;
     }
 
     &__frog {
@@ -1544,13 +1532,11 @@ p {
 
     &__heading1 {
         animation: heading1 2s;
-        animation-fill-mode: forwards;
     }
 
     &__heading2 {
         opacity: 0;
         animation: heading1 2s 2s;
-        animation-fill-mode: forwards;
     }
 
     &__action-button {
@@ -1569,6 +1555,33 @@ p {
         }
     }
 }
+
+@keyframes slideInFromRightFrog1 {
+    from {
+      right: -10vw; /* Starting position outside the viewport */
+    }
+    to {
+      right: 30vw; /* Final position */
+    }
+  }
+  
+  @keyframes slideInFromLeftFrog2 {
+    from {
+      left: -40vw; /* Starting position outside the viewport */
+    }
+    to {
+      left: 15vw; /* Final position */
+    }
+  }
+
+  @keyframes slideInFromLeftFrog3 {
+    from {
+      left: -40vw; /* Starting position outside the viewport */
+    }
+    to {
+      left: 33vw; /* Final position */
+    }
+  }
 
 .cat-walk {
     display: block;
@@ -1621,6 +1634,15 @@ p {
             move-cat 5s forwards,
             fade-out 2s 4s forwards; // Chain animations
     }
+    &__frog--walk {
+        width: 10vw;
+        right: -10vw;
+        top: 20vw;
+        position: absolute;
+        animation: 
+            slideInFromRight 7s 5s forwards,
+            bounce2 3s 0.5s infinite;
+    }
 }
 @keyframes move-cat {
     0% {
@@ -1639,6 +1661,15 @@ p {
     }
     100% {
         opacity: 0; // End fully transparent
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        right: -10vw; /* Starting position outside the viewport */
+    }
+    to {
+        right: 45vw; /* Final position */
     }
 }
 

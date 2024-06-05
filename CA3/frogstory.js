@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //TORIL
 
-//Action button
+// Action button
 window.addEventListener("scroll", function() {
   const scrollButton = document.querySelector(".frog-habitat__action-button");
   if (window.scrollY > 10350 && window.scrollY < 10900) {
@@ -75,14 +75,15 @@ window.addEventListener("scroll", function() {
   }
 });
 
-// // Function to add image elements to the grass box
+// Function to add image elements to the grass box
 function addImagesToGrass() {
   const image1Coordinates = { x: 800, y: 630 };
   const image2Coordinates = { x: 1000, y: 230 };
-  const image3Coordinates = { x: 200, y: 95 };
+  const image3Coordinates = { x: 600, y: 295 };
   const image4Coordinates = { x: 1400, y: 390 };
   const image5Coordinates = { x: 100, y: 360 };
-  const image6Coordinates = { x: 1400, y: 10 };
+  const image6Coordinates = { x: 1400, y: 580 };
+  const image7Coordinates = { x: 300, y: 600 };
 
   const grassContainer = document.querySelector(".frog-habitat");
 
@@ -92,20 +93,23 @@ function addImagesToGrass() {
   let image4 = document.createElement("img");
   let image5 = document.createElement("img");
   let image6 = document.createElement("img");
+  let image7 = document.createElement("img");
 
   image1.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/leafs.svg";
   image2.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/pond.svg";
-  image3.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/tree.svg";
+  image3.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/logs1.svg";
   image4.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/leafs.svg";
   image5.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/leafs.svg";
-  image6.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/tree.svg";
+  image6.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/logs3.svg";
+  image7.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/logs2.svg";
 
   image1.height = 100;
   image2.height = 200;
-  image3.height = 500;
+  image3.height = 50;
   image4.height = 100;
   image5.height = 100;
-  image6.height = 300;
+  image6.height = 100;
+  image7.height = 80;
 
   image1.style.position = "absolute";
   image1.style.left = `${image1Coordinates.x}px`;
@@ -131,12 +135,17 @@ function addImagesToGrass() {
   image6.style.left = `${image6Coordinates.x}px`;
   image6.style.top = `${image6Coordinates.y}px`;
 
+  image7.style.position = "absolute";
+  image7.style.left = `${image7Coordinates.x}px`;
+  image7.style.top = `${image7Coordinates.y}px`;
+
   grassContainer.appendChild(image1);
   grassContainer.appendChild(image2);
   grassContainer.appendChild(image3);
   grassContainer.appendChild(image4);
   grassContainer.appendChild(image5);
   grassContainer.appendChild(image6);
+  grassContainer.appendChild(image7);
 
   const removeImagesFromGrass = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -152,15 +161,45 @@ function addImagesToGrass() {
   removeImagesFromGrass.observe(image4);
   removeImagesFromGrass.observe(image5);
   removeImagesFromGrass.observe(image6);
+  removeImagesFromGrass.observe(image7);
 }
 
-// // Function to check if an element is in the viewport
-function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
+// Function to add frog images with slide-in animations
+function addSlidingFrogs() {
+  const grassContainer = document.querySelector(".frog-habitat");
+
+  const frog1 = document.createElement("img");
+  const frog2 = document.createElement("img");
+  const frog3 = document.createElement("img");
+
+  frog1.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg";
+  frog2.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg";
+  frog3.src = "/Web-Portfolio-Exam/CA3/assets/SVGs/frog.svg";
+
+  frog1.height = 75;
+  frog2.height = 90;
+  frog3.height = 100;
+
+  frog1.style.position = "absolute";
+  frog2.style.position = "absolute";
+  frog3.style.position = "absolute";
+
+  frog1.style.animation = "slideInFromLeftFrog2 2s forwards";
+  frog2.style.animation = "slideInFromRightFrog1 4s forwards";
+  frog3.style.animation = "slideInFromLeftFrog3 6s forwards";
+
+  grassContainer.appendChild(frog1);
+  grassContainer.appendChild(frog2);
+  grassContainer.appendChild(frog3);
+
+  frog1.style.top = "200px";
+  frog2.style.top = "450px";
+  frog3.style.top = "550px";
+
+  frog1.style.left = "-40vw";
+  frog2.style.right = "-10vw";
+  frog3.style.left = "-40vw";
 }
+
+// Adding event listener for the button to add frogs on click
+document.querySelector(".frog-habitat__action-button").addEventListener("click", addSlidingFrogs);
