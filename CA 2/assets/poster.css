@@ -9,6 +9,9 @@
   path {
     animation: moveAlongPath 40s infinite alternate;
   }
+  #rotateAnimationBig {
+    animation: none !important;
+  }
 }
 body {
   font-family: Caveat;
