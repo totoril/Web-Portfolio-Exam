@@ -24,6 +24,22 @@ Set placement for the headings
 Streamline headings - h1, h2, h3??
 */
 
+@media (prefers-reduced-motion: reduce) {
+    .textsection{
+        &__header1{
+            animation: none !important;
+        }
+        &__header2 {
+            animation: none !important;
+        }
+    }
+    .unsg {
+        &__frog {
+            animation: none !important;
+        }
+    }
+}
+
 * {
     margin: 0;
     box-sizing: border-box;

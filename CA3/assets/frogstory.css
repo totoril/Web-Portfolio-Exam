@@ -6,6 +6,17 @@ Fade out elemments so they dont "float in the air" gsap???
 Set placement for the headings
 Streamline headings - h1, h2, h3??
 */
+@media (prefers-reduced-motion: reduce) {
+  .textsection__header1 {
+    animation: none !important;
+  }
+  .textsection__header2 {
+    animation: none !important;
+  }
+  .unsg__frog {
+    animation: none !important;
+  }
+}
 * {
   margin: 0;
   box-sizing: border-box;
