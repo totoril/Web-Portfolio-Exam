@@ -31,3 +31,9 @@ GitHub link: https://github.com/AdvancedCSS2024/idg1292-2024-oblig3-group11.git
 
 # Improved
 The code for the improved Poster and Frog story is within the folders CA 2, and CA3 in this current folder.
+
+# Main GitHub repository
+Link: https://github.com/totoril/Web-Portfolio-Exam.git
+
+# Live version
+Link : 
