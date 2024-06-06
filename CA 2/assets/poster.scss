@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: Caveat;
     src: url(font/Caveat-Regualar.ttf);
 }
@@ -6,10 +6,10 @@
 @media (prefers-reduced-motion: reduce) {
     .moon {
         animation: moveMoon 20s infinite ease-in-out !important;
-        }
+    }
     path {
         animation: moveAlongPath 20s infinite alternate !important;
-        }
+    }
     #rotateAnimationBig {
         animation: none !important;
     }
@@ -38,20 +38,20 @@ body {
     margin-left: 5%;
     margin-right: 50%;
     font-size: 2vw;
-    &__first{
-    margin-top: 10%;
-    color: #005BA7;
+    &__first {
+        margin-top: 10%;
+        color: #005ba7;
     }
     &__second {
         font-family: Caveat;
     }
 }
 
-textPath{
+textPath {
     position: absolute;
 }
 
-.single__paragraph{
+.single__paragraph {
     position: absolute;
     font-size: 1.5vw;
     margin-left: 5%;
@@ -59,8 +59,6 @@ textPath{
     margin-top: 32%;
     color: white;
 }
-
-
 
 .container {
     position: relative;
@@ -120,25 +118,24 @@ textPath{
                 }
             }
         }
-    }    
+    }
     /*The small earth patch*/
-    &__earth-patch{
+    &__earth-patch {
         position: absolute;
         width: 10vw;
         height: 10vw;
-        border-radius: 100% 45% 62% 58% / 67% 98% 76% 36% ;
-        background-color: #A1CF6D;
+        border-radius: 100% 45% 62% 58% / 67% 98% 76% 36%;
+        background-color: #a1cf6d;
         border: 2px solid black;
         top: 110vw;
         left: 45vw;
 
-        &__mail{
+        &__mail {
             position: absolute;
             max-width: 10vw;
             font-size: 2vw;
         }
     }
-
 }
 
 #car {
@@ -147,73 +144,77 @@ textPath{
 }
 
 @keyframes moveMoon {
-    0% {transform: translateY(0);}
-    50% {transform: translateY(100px);}
-    100% {transform: translateY(0);}
+    0% {
+        transform: translateY(0);
     }
-    .moon {
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.moon {
     animation: moveMoon 5s infinite ease-in-out;
-    }
-    path {
+}
+path {
     animation: moveAlongPath 4s infinite alternate;
-    }
-
+}
 
 // Bacground colors
-    .lightred {
-        opacity:0.38;
-        fill:#C77161;
-    }
+.lightred {
+    opacity: 0.38;
+    fill: #c77161;
+}
 
-    .lightblue {
-        opacity:0.15;
-        fill:#00B1DC;
-    }
+.lightblue {
+    opacity: 0.15;
+    fill: #00b1dc;
+}
 
-    .blue {
-        fill:#005BA7;
-    }
+.blue {
+    fill: #005ba7;
+}
 
-    .white {
-        fill:#FFFFFF;
-    }
+.white {
+    fill: #ffffff;
+}
 
 // Car styling
-    .car__color {
-        fill:#C77161;
-    }
+.car__color {
+    fill: #c77161;
+}
 
-    .car__lines {
-        stroke:#000000;
-        stroke-width:4.206;
-        stroke-miterlimit:10;
-    }
+.car__lines {
+    stroke: #000000;
+    stroke-width: 4.206;
+    stroke-miterlimit: 10;
+}
 
 // Stars
-    .stars__color {
-        fill:#F5EC43;
-        stroke:#000000;
-        stroke-width:4.6017;
-        stroke-miterlimit:10;
-    }
+.stars__color {
+    fill: #f5ec43;
+    stroke: #000000;
+    stroke-width: 4.6017;
+    stroke-miterlimit: 10;
+}
 
 // Moon styling
-    .moon {
-        fill:#EAEAE9;
-        stroke:#000000;
-        stroke-width:4.206;
-        stroke-miterlimit:10;
-    }
-    .moon__eyes {
-        fill: #000000;
-        stroke-width:4.6017;
-        stroke-miterlimit:10;
-    }
+.moon {
+    fill: #eaeae9;
+    stroke: #000000;
+    stroke-width: 4.206;
+    stroke-miterlimit: 10;
+}
+.moon__eyes {
+    fill: #000000;
+    stroke-width: 4.6017;
+    stroke-miterlimit: 10;
+}
 
-    .moon__circles {
-        fill:#B4B6B7;
-        stroke:#000000;
-        stroke-width:4.6017;
-        stroke-miterlimit:10;
-    }
-
+.moon__circles {
+    fill: #b4b6b7;
+    stroke: #000000;
+    stroke-width: 4.6017;
+    stroke-miterlimit: 10;
+}
